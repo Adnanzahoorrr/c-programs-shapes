@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+    float side, area, perimeter;
+    printf("Enter side of regular hexagon: ");
+    scanf("%f", &side);
+    perimeter = 6 * side;
+    area = (3 * sqrt(3) * side * side) / 2;
+    printf("Area: %.2f\nPerimeter: %.2f\n", area, perimeter);
+    return 0;
+}
