@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+    float side, area, perimeter;
+    printf("Enter side of regular heptagon: ");
+    scanf("%f", &side);
+    perimeter = 7 * side;
+    area = (7.0 / 4.0) * side * side * (1 / tan(M_PI / 7));
+    printf("Area: %.2f\nPerimeter: %.2f\n", area, perimeter);
+    return 0;
+}
