@@ -1,0 +1,11 @@
+include <stdio.h>
+#include <math.h>
+int main() {
+    float side, area, perimeter;
+    printf("Enter side of regular octagon: ");
+    scanf("%f", &side);
+    perimeter = 8 * side;
+    area = 2 * (1 + sqrt(2)) * side * side;
+    printf("Area: %.2f\nPerimeter: %.2f\n", area, perimeter);
+    return 0;
+}
