@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    float a, b, c, base, height, area, perimeter;
+    printf("Enter 3 sides of triangle: ");
+    scanf("%f%f%f", &a, &b, &c);
+    printf("Enter base and height for area: ");
+    scanf("%f%f", &base, &height);
+    perimeter = a + b + c;
+    area = 0.5 * base * height;
+    printf("Area: %.2f\nPerimeter: %.2f\n", area, perimeter);
+    return 0;
+}
